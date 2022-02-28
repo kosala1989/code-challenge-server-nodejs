@@ -6,11 +6,29 @@ Please refer to the provided document for the code challenge requirements.
 
 ### Configuration
 
+### Run Application
+
+```bash
+# Please execute below comamnd to run the application
+$ npm run start
+
+# Please execute below command to run the application in dev mode 
+$ npm run dev
+```
+### Execute Tests
+```bash
+# Please execute below comamnd to execute tests of the application
+$ npm run test
+```
+
 #Summary
 ### Highlights of improvements
 
-###What would I improve next if I had more time
+- Add and setup testing layer of the project. Now any file ends with *.test.js will be detected by jest and execute tests
+- Add nodemon dependency and dev script
+- 
+### What would I improve next if I had more time
 
-###Questions I would ask and my own answers and assumptions
+### Questions I would ask and my own answers and assumptions
 
-###Explanations of decisions or the approach I took
+### Explanations of decisions or the approach I took
