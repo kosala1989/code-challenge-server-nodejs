@@ -30,6 +30,7 @@ $ npm run test
 - Add basic tests and verify functionality before start refactorings 
 - Add test to verify CORS 
 - Add routes  and organize code based on the routes
+- Add `express-async-errors` to catch asynchronous errors
 
 ### What would I improve next if I had more time
 
