@@ -24,5 +24,11 @@ describe('Test API function ', () => {
             let answer = await request(server).get('/temperature/1');
             expect(answer.text).toBe("{\"id\":\"1\",\"temperature\":6}");
         });
+
+        it('should implement CORS', async() => {
+            const { headers } = await request(server).get('/');
+            expect(headers['access-control-allow-origin']).toEqual('*');
+        });
+
     })
 })
