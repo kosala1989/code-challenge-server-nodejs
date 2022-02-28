@@ -17,6 +17,8 @@ app.get('/temperature/:id', (req, res) => {
     .then((response) => res.send(response));
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`SensorTech server at http://localhost:${port}`);
 });
+
+module.exports = server;
