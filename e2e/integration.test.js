@@ -30,5 +30,12 @@ describe('Test API function ', () => {
             expect(headers['access-control-allow-origin']).toEqual('*');
         });
 
+        it('should throw 500 error if api not able to connect to IOT URL', async () => {
+            fetch.mockResponse(new Error());
+            let answer = await request(server).get('/temperature/1');
+            expect(answer.text)
+                .toBe("{\"message\":\"Error while reading temperature\"}");
+        });
+
     })
 })

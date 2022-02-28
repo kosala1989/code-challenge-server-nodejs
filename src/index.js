@@ -1,8 +1,10 @@
+require('express-async-errors');
 const express = require('express');
 const cors = require('cors');
 const temperature = require('./routes/temperature');
 const env = require('dotenv')
 env.config();
+
 
 const app = express();
 app.use(cors());
