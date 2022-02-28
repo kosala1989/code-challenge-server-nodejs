@@ -26,7 +26,8 @@ $ npm run test
 
 - Add and setup testing layer of the project. Now any file ends with *.test.js will be detected by jest and execute tests
 - Add nodemon dependency and dev script
-- 
+- Add dotEnv dependency and configure url, ports in configuration file. In the future, we can use this file to store environment specific value in proper way
+
 ### What would I improve next if I had more time
 
 ### Questions I would ask and my own answers and assumptions

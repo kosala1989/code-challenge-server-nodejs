@@ -1,15 +1,17 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const cors = require('cors');
+const env = require('dotenv')
+env.config();
 
 const app = express();
-const port = 8081;
+const port = process.env.APPLICATION_PORT;
 
 app.use(cors());
 
 app.get('/temperature/:id', (req, res) => {
   fetch(
-    `https://temperature-sensor-service.herokuapp.com/sensor/${req.params.id}`
+    `${process.env.IOT_API_URL}/sensor/${req.params.id}`
   )
     .then((response) => response.json())
     .then((response) => res.send(response));
