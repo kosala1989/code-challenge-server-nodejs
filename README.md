@@ -2,7 +2,7 @@
 Please refer to the provided document for the code challenge requirements. 
 
 - Time started : 5.32 P.M. SGT
-- Time completed: 
+- Time completed: 7.45 P.M, SGT 
 
 ### Configuration
 
@@ -31,9 +31,25 @@ $ npm run test
 - Add test to verify CORS 
 - Add routes  and organize code based on the routes
 - Add `express-async-errors` to catch asynchronous errors
+- Handle errors and add logging to the application 
 
 ### What would I improve next if I had more time
 
-### Questions I would ask and my own answers and assumptions
+- Since it's in initial stage, I would convert this project to TypeScript.
+- I would discuss with design team and change API in a such  a way that will reduce API calls to IOT layer.
+- Add cache layer to enhance performance (*** Need to consider cache stale)
+- Make project type-script support
+- Introduce new framework like nest.js to project. Since it provides 
+  out of box solutions to many use cases which may needed in future 
+  - Add proper structure to project 
+  - Caching support 
+  - Microservice support  
+  - ORM support 
+  - Logging/Auditing
+- Add deployment script (dockerized the project )
+- Add smoke tests/ security testing/ static code analysis 
 
 ### Explanations of decisions or the approach I took
+
+This exercise is about technical depth, hence I believe they would not expect me change any API contract in application.
+Since project does not have proper safety harness, before I start refactoring I makesure to add enough tests to application and verify all are running well.
