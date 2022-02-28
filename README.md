@@ -29,6 +29,7 @@ $ npm run test
 - Add dotEnv dependency and configure url, ports in configuration file. In the future, we can use this file to store environment specific value in proper way
 - Add basic tests and verify functionality before start refactorings 
 - Add test to verify CORS 
+- Add routes  and organize code based on the routes
 
 ### What would I improve next if I had more time
 
